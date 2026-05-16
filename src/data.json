@@ -1,0 +1,19 @@
+{
+  "gameTime": "13:05",
+  "blueTeam": { 
+    "name": "KT", 
+    "logo": "/kt-rolster.png", 
+    "kills": 0, 
+    "gold": "12.5K", 
+    "goldDiff": "+0.4K", 
+    "towers": 0 
+  },
+  "redTeam": { 
+    "name": "HLE", 
+    "logo": "/hanwha.png", 
+    "kills": 0, 
+    "gold": "12.1K", 
+    "goldDiff": "0", 
+    "towers": 0 
+  }
+}
