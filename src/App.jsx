@@ -38,3 +38,27 @@
           
           <span style={{ fontSize: '40px', fontWeight: '300', cursor: 'pointer' }} onClick={() => updateKill('redTeam', 1)}>{data.redTeam.kills}</span>
         </div>
+
+ {/* 레드팀 영역 (잃어버린 HLE 로고와 그라데이션 복구!) */}
+        <div style={{
+          flex: 1, height: '100%', display: 'flex', flexDirection: 'row-reverse', alignItems: 'center', padding: '0 30px',
+          background: 'linear-gradient(-90deg, #E6334D 0%, rgba(230, 51, 77, 0.4) 50%, transparent 100%)'
+        }}>
+          <img src={data.redTeam.logo} style={{ width: '50px', height: '50px', objectFit: 'contain', marginLeft: '30px', filter: 'brightness(0) invert(1)' }} />
+          <span style={{ fontSize: '40px', fontWeight: '900', fontStyle: 'italic' }}>{data.redTeam.name}</span>
+          <div style={{ width: '1.5px', height: '60px', backgroundColor: 'rgba(255, 255, 255, 0.4)', margin: '0 40px' }} />
+          
+          <div style={{ display: 'flex', flexDirection: 'row-reverse', alignItems: 'center', gap: '25px' }}>
+            <div style={{ display: 'flex', alignItems: 'center' }}>
+              <span style={{ fontSize: '24px', color: 'white', fontWeight: '500', marginRight: '8px' }}>{data.redTeam.towers}</span>
+              <img src="/tower.png" style={{ width: '25px', height: '25px', filter: 'invert(31%) sepia(82%) saturate(3660%) hue-rotate(335deg) brightness(97%) contrast(102%)' }} />
+            </div>
+            
+            <div style={{ display: 'flex', alignItems: 'center' }}>
+              <span style={{ fontSize: '20px', color: 'white', fontWeight: '600', marginRight: '8px' }}>{data.redTeam.gold}</span>
+              <img src="/coin.png" style={{ width: '18px', height: '18px', filter: 'invert(31%) sepia(82%) saturate(3660%) hue-rotate(335deg) brightness(97%) contrast(102%)' }} />
+            </div>
+          </div>
+        </div>
+      </div>
+
